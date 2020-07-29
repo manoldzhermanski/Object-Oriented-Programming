@@ -24,11 +24,11 @@ struct Planet
 		
 	}
 
-	double neededSeconds() {
-		return distanceToSun / 299792;
-	}
-
 };
+
+double neededSeconds(Planet p) {
+	return p.distanceToSun/ 299792;
+}
 
 void createArray(Planet* arr, unsigned size) {
 	for (unsigned i = 0; i < size; i++) {
