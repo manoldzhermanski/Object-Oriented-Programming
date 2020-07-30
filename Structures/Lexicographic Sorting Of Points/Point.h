@@ -16,13 +16,13 @@ bool compare(int fst, int snd) {
 	char fstarr[15];
 	int i = 0;
 	while (fst) {
-		fstarr[i++] = fst % 10;
+		fstarr[i++] = fst % 10 + '0';
 		fst /= 10;
 	}
 	char sndarr[15];
 	int j = 0;
 	while (snd) {
-		sndarr[j++] = snd % 10;
+		sndarr[j++] = snd % 10 + '0';
 		snd /= 10;
 	}
 	bool are_sorted = true;
